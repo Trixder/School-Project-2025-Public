@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body::before {
+  content: "";
+  position: fixed; /* Covers the whole viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 0; /* Keeps it below the content */
+}
+body {
+  background-image: url(/Images/image0.webp); /* Změň cestu na správnou */
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-color: black;
+    color: white;
+    text-align: left;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Navigace */
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.nav {
+  background-color: rgba(175, 4, 4, 0.137);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+  
+}
+
+.nav .logo {
+  margin-left: 3vw;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav .nav-links {
+  display: flex;
+  gap: 2vw;
+  margin-right: 2vw;
+}
+
+.nav .nav-links a {
+  color: white;
+  margin-right: 2vw;
+  text-decoration: none;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+
+
+
+/* Hero sekce */
+.hero {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 8rem;
+    font-weight: bold;
+    color: #ff0055;
+    left: 60px;
+    font-family: "IBM Plex Sans", serif;
+
+}
+.hero h1{
+  font-weight: 600;
+}
+.login-link {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 600;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.login-link:hover {
+  color: #ff0055;
+}
+.hero p {
+    font-size: 8rem;
+    color: #ff0055;
+    padding-left: 10px;
+    font-family: "IBM Plex Sans", serif;
+    font-weight: 400;
+}
+
+/* Tlačítka */
+.buttons {
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+    display: flex;
+    gap: 45px;
+}
+.ham {
+  display: none;
+  position: fixed; /* Ensure it's positioned correctly */
+  top: 15px;
+  left: 20px;
+  z-index: 11000; /* Higher than menu */
+}
+
+.ham img{
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+}
+
+ul li{
+  color: white;
+  list-style-type: none;
+}
+
+.menu a{
+  text-align: center;
+  color: white;
+  font-family: "IBM Plex Sans", serif;
+  font-size: 50px;
+  text-decoration: none;
+  z-index: 100000000;
+  font-weight: 600;
+}
+
+
+
+
+
+.beautiful-button {
+  font-family: "IBM Plex Sans", serif;
+  position: relative;
+  font-weight: 400;
+  font-size: 33px;
+  border: solid 1px rgb(148, 148, 148);
+  border-radius: 45px;
+  padding: 10px 20px;
+  background: rgb(105, 105, 105 ,  .5);
+  cursor: pointer;
+  animation: button-shimmer 2s infinite;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.beautiful-button:hover {
+  background: linear-gradient(to bottom, #a30036c0, hsla(340, 100%, 50%, 0.527));
+  animation: button-particles 2s ease-in-out infinite;
+  transform: translateY(-3px);
+}
+
+
+.beautiful-button:active {
+  transform: scale(1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+@keyframes button-shimmer {
+  0% {
+    background-position: left top;
+  }
+
+  100% {
+    background-position: right bottom;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Particle animation */
+  @keyframes button-particles {
+    0% {
+      background-position: left top;
+    }
+  
+    100% {
+      background-position: right bottom;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .ham {
+      display: block;
+      position: fixed;
+      top: 15px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      z-index: 11000; /* Always on top */
+  }
+  
+  .ham img {
+      width: 50px;
+      height: 50px;
+  }
+  
+  #hamburger-menu-close {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      z-index: 11001; /* Higher than menu */
+      display: none; /* Hidden by default */
+  }
+  
+  /* Menu styling */
+  #menu {
+    font-family: "IBM Plex Sans", serif;
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(/Images/gradient1.webp);
+      color: white;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      text-align: center;
+      z-index: 10000;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  #menu.active {
+      display: flex;
+      opacity: 1;
+      visibility: visible;
+      font-family: "IBM Plex Sans", serif;
+  }
+  
+  /* Show close button when menu is active */
+  #menu.active #hamburger-menu-close {
+      display: block;
+  }
+  
+  /* Hide the original hamburger when menu is active */
+  #menu.active ~ #hamburger-menu {
+      display: none;
+  }
+  
+
+    /* Style the nav links inside the dropdown */
+    #menu li a {
+        font-size: 30px;
+        text-decoration: none;
+        font-family: "IBM Plex Sans", serif;
+        color: white;
+        letter-spacing: 0.1em;
+        border-radius: solid 10px grey;
+        padding: 10px;
+        transition: color 0.2s ease-in-out;
+    }
+
+    /* Change color on hover */
+    #menu li a:hover {
+        color: #ff0055; /* Red color on hover */
+    }
+    /* Adjust the hero section */
+    .hero {
+        top: 10%;
+        left: 5%;
+    }
+
+    .hero h1 {
+      font-size: 6rem;
+      position: relative;
+      left: 60px; /* Posun textu doleva */
+      transform: translateX(-50px); /* Další způsob posunutí */
+  }
+  .hero p{
+    font-size: 4rem;
+  }
+  
+
+   
+    .buttons {
+      position: absolute;
+      bottom: 8%;
+      display: flex;
+      flex-direction: column; /* Ensures they are stacked vertically */
+      gap: 4rem;
+
+
+    }
+    
+    .beautiful-button {
+      font-family: "IBM Plex Sans", serif;
+      position: relative;
+      font-weight: 400;
+      font-size: 33px;
+      border: solid 1px rgb(148, 148, 148);
+      border-radius: 45px;
+      padding: 10px 20px;
+      background: rgb(105, 105, 105 ,  .5);
+      cursor: pointer;
+    }
+    
+    /* Adjust left position for each button */
+    .buttons button:nth-child(1) {
+      left: 65%;
+    }
+    
+    .buttons button:nth-child(2) {
+      left: 95%;
+    }
+    
+    .buttons button:nth-child(3) {
+      left: 55%;
+    }
+    
+
+    body {
+      background-image: url(/Images/image0.webp);
+      background-position: center;
+      background-size: 1400px;
+      
+    }
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0.5; /* Set the opacity of the overlay */
+      z-index: -1; /* Ensure it's behind all other content */
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .hero h1 {
+    font-size: 7rem;
+    position: relative;
+    left: 30px; /* Posun textu doleva */
+    transform: translateX(-50px); /* Další způsob posunutí */
+}
+
+.hero p{
+  font-size: 4rem;
+}
+
+}
+
+
+
+
+
+
+

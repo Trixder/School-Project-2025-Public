@@ -1,0 +1,19 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"school-project-2025"},
+{"type":"table","name":"users","database":"school-project-2025","data":
+[
+{"Id":"1","Username":"test","Email":"test@test.test","Password":"test","Score":"0","Creation":"2025-02-17 15:58:47","Token":null,"TokenCreation":null},
+{"Id":"2","Username":"random","Email":"random@random.random","Password":"random","Score":"0","Creation":"2025-02-17 15:58:55","Token":null,"TokenCreation":null},
+{"Id":"3","Username":"user_01","Email":"-","Password":"-","Score":"5","Creation":"2025-02-17 17:39:33","Token":null,"TokenCreation":null},
+{"Id":"4","Username":"user_02","Email":"-","Password":"-","Score":"8","Creation":"2025-02-17 17:39:44","Token":null,"TokenCreation":null},
+{"Id":"5","Username":"user_03","Email":"-","Password":"-","Score":"4","Creation":"2025-02-17 17:39:53","Token":null,"TokenCreation":null},
+{"Id":"6","Username":"John","Email":"john@example.com","Password":"","Score":"0","Creation":"2025-02-17 18:39:27","Token":null,"TokenCreation":null},
+{"Id":"7","Username":"John","Email":"john@example.comm","Password":"asd","Score":"0","Creation":"2025-02-17 18:41:01","Token":null,"TokenCreation":null},
+{"Id":"8","Username":"DFG","Email":"admin@admin.admin","Password":"admin","Score":"0","Creation":"2025-02-17 18:58:08","Token":null,"TokenCreation":null},
+{"Id":"9","Username":"asd","Email":"asd@asd.asd","Password":"asd","Score":"0","Creation":"2025-02-17 19:03:56","Token":null,"TokenCreation":null},
+{"Id":"10","Username":"qwe","Email":"qwe@qwe.qwe","Password":"$2y$12$V5k8kEDp3GtVa9aNX8nI6uLnmCu15jn83W59eZ6LUSyIOPLXqZXDS","Score":"0","Creation":"2025-02-17 19:10:12","Token":"51bb06b0f91d0c79c72faaa0585aaefceaa11d5135e787232b27a3350a6a1f8f","TokenCreation":"2025-02-18 07:30:49"},
+{"Id":"11","Username":"ert","Email":"ert@ert.ert","Password":"$2y$12$K2PoAhCjpYvBmFMpWE9HIut3fTf5OhXVGBsKdfCnTIlO9ejgFbCCS","Score":"0","Creation":"2025-02-17 19:12:46","Token":null,"TokenCreation":null}
+]
+}
+]

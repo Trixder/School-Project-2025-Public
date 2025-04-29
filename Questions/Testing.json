@@ -1,0 +1,131 @@
+{
+    "questions": [
+        {
+            "question": {
+                "type": "question",
+                "value": "Co znamená slovo “kár” ve větě “Ty seš fakt kár!”",
+                "answers": ["vůl", "mužský pohlavní orgán", "kámoš", "holkolap"],
+                "questionID": 0,
+                "correctID": 1
+            }
+        },
+        {
+            "question": {
+                "type": "question",
+                "value": "Co znamená slovo “dyk” ve větě “Dyk jaký má šaty!”",
+                "answers": ["koukej", "díky", "penis"],
+                "questionID": 1,
+                "correctID": 0
+            }
+        },
+        {
+            "question": {
+                "type": "question",
+                "value": "Co znamená slovo “valit” ve větě “Co borec valí?”",
+                "answers": ["balit holku", "mluvit nesmysly", "balit cigaretu", "koulet předmět"],
+                "questionID": 2,
+                "correctID": 1
+            }
+        },
+        {
+            "question": {
+                "type": "question",
+                "value": "Co znamená slovo “more” ve větě “more tak to je crazy”",
+                "answers": ["více", "nechápu", "kámo", "moře bez ř"],
+                "questionID": 3,
+                "correctID": 2
+            }
+        },
+        {
+            "question": {
+                "type": "question",
+                "value": "Co znamená pojem “hell nah” ve větě “Hell nah, to si deláš srandu.”",
+                "answers": ["vůbec ne", "nebesky ne", "možná", "blázen"],
+                "questionID": 4,
+                "correctID": 0
+            }
+        },
+        {
+            "question": {
+                "type": "question",
+                "value": "Co znamená pojem “goated” ve větě “To je mega goated hra.”",
+                "answers": ["primitivní jako zvíře", "nejlepší ze všech", "nepovedený"],
+                "questionID": 5,
+                "correctID": 1
+            }
+        },
+        {
+            "question": {
+                "type": "question",
+                "value": "Co znamená pojem “on god” ve větě “Ta kalba byla mega fajn!” “On god!”",
+                "answers": ["souhlasím", "ano", "doslova", "na slovo boží"],
+                "questionID": 6,
+                "correctID": 0
+            }
+        },
+        {
+            "question": {
+                "type": "question",
+                "value": "Co znamená slovo “ara” ve větě “Ara, policie!”",
+                "answers": ["bacha", "nečum", "papoušek", "utíkej!"],
+                "questionID": 7,
+                "correctID": 0
+            }
+        },
+        {
+            "question": {
+                "type": "question",
+                "value": "Jaký význam má pojem “ghostnout” ve větě “Borec mě totálně vyghostil.”",
+                "answers": ["vyděsit někoho", "ignorovat někoho", "dokouřit rychle cigaretu", "zapálit oblečení"],
+                "questionID": 8,
+                "correctID": 1
+            }
+        },
+        {
+            "question": {
+                "type": "question",
+                "value": "Co znamená slovo “čára” ve větě “Dáme čáru?”",
+                "answers": ["lajna", "panák", "šňupací tabák", "dřevotříska"],
+                "questionID": 9,
+                "correctID": 1
+            }
+        },
+        {
+            "question": {
+                "type": "question",
+                "value": "Jaký význam má pojem “lock in” ve větě “Já jsem se locknul in”",
+                "answers": ["pořádně se soustředit", "uzavřít se do sebe", "zamknout", "přestat myslet"],
+                "questionID": 10,
+                "correctID": 0
+            }
+        },
+        {
+            "question": {
+                "type": "question",
+                "value": "Jaký význam má pojem “netflix and chill” ve větě “dáme netflix and chill?”",
+                "answers": ["povídání o filmech", "filmový večer", "film a po něm pohlavní styk", "promítání na dobrou věc"],
+                "questionID": 11,
+                "correctID": 2
+            }
+        },
+        {
+            "question": {
+                "type": "question",
+                "value": "Co znamená slovo “houska” ve větě “Pořádám houku v pátek.”",
+                "answers": ["párty, kde hraje housová muzika", "akce u někoho doma", "pečivo"],
+                "questionID": 12,
+                "correctID": 1
+            }
+        },
+        {
+            "question": {
+                "type": "question",
+                "value": "Co znamená slovo “rave” ve větě “Jdeme na rave?”",
+                "answers": ["diskotéka", "závody", "drink"],
+                "questionID": 13,
+                "correctID": 0
+            }
+        }
+        
+    ]
+}

@@ -1,0 +1,243 @@
+.end {
+    background-image: url(/Images/image0.webp); 
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+    background: rgba(255, 255, 255, 0.3);
+}
+.skibidi {
+    display: none;
+    position: fixed; /* Keep it at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10001; /* Higher than other elements */
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav .nav-links a {
+   
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    margin-right: 2vw;
+    align-items: center;
+}
+
+
+
+.circle-score {
+    width: 15vw;
+    height: 30vh;
+    border-radius: 50%;
+    border: 8px solid rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+#FinalScore {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#TextScore {
+    font-size: 1.8rem;
+    margin-bottom: 10vh;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    font-family: "IBM Plex Sans", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 45px;
+    padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.ham, .menu {
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+
+    #menu ul li {
+        list-style-type: none;
+    }
+
+    .end{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skib {
+        display: none; /* Hide the regular nav */
+    }
+    
+    .skibidi {
+        display: block;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+        padding: 0px;
+    }
+    .circle-score{
+        margin: 100px;
+    }
+    #TextScore{
+        margin: 0;
+    }
+    h1{
+       margin: 50px;
+       font-size: 3rem;
+    }
+    .nav {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav a {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-links a {
+        display: none;
+    }
+
+    .ham {
+        display: block;
+        position: fixed;
+        top: 15px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        z-index: 11000;
+    }
+
+    .ham img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #hamburger-menu-close {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        z-index: 11001;
+        display: none;
+    }
+
+    #menu {
+        font-family: "IBM Plex Sans", serif;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/Images/gradient1.webp);
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+        z-index: 10000;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    #menu ul li {
+        list-style-type: none;
+    }
+
+    #menu.active {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        font-family: "IBM Plex Sans", serif;
+    }
+
+    #menu.active #hamburger-menu-close {
+        display: block;
+    }
+
+    #menu.active ~ #hamburger-menu {
+        display: none;
+    }
+
+    #menu li a {
+        font-size: 30px;
+        text-decoration: none;
+        font-family: "IBM Plex Sans", serif;
+        color: white;
+        letter-spacing: 0.1em;
+        padding: 10px;
+        transition: color 0.2s ease-in-out;
+    }
+
+    #menu li a:hover {
+        color: #ff0055;
+    }
+
+    .circle-score{
+        border-radius: 50%;
+        width: 60%;
+    }
+}

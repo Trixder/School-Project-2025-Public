@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.remove-scroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+.questions {
+    display: flex;
+    flex-wrap: nowrap;
+}
+  
+.question, .result, .end, .video-div, .photo-div, .audio-div {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+}
+
+.ytp-chrome-top {
+    display: none;
+}
+
+.answers {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    gap: 15px; /* Adjust spacing between the items */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.slider {
+    bottom: 2vh;
+    right: 25vw;
+    position: fixed;
+    background-color: gray;
+    width: 50vw;
+    height: 1vh;
+}
+.back {
+    top: 1vh;
+    left: 1vw;
+    position: fixed;
+}
+.slider-background {
+    transition: width 0.3s ease-in-out;
+    background-color: white;
+    width: 0%;
+    height: 100%;
+}
+
+.value{
+    color: white;
+    overflow-wrap: break-word; /* Alternative word wrapping */
+    white-space: normal; /* Allows text to wrap naturally */
+    display: block; 
+    font-size: 180px;
+    width: 80%;
+    text-align: center;
+    padding: 100px;
+}
+
+.question{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/Images/gradient2.webp);
+    background-size: cover;
+    font-family: "IBM Plex Sans", serif;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox-box {
+    font-weight: 1000;
+    font-family: "IBM Plex Sans", serif;
+    position: relative;
+    font-size: 35px;
+    border: solid 1px rgb(219, 202, 202);
+    border-radius: 45px;
+    padding: 15px 50px;
+    background: rgba(223, 223, 223, 0.3);
+    cursor: pointer;
+    width: 60%;
+    text-align: center;
+    color: whitesmoke;
+    margin: 25px;
+}

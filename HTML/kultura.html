@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Styles/propoj.css">
+    <title>Gen Z Kultura</title>
+</head>
+<body>
+    <div class="imageKultura">
+        <!-- Hamburger Menu -->
+        <a href="#" id="hamburger-menu" class="ham">
+            <img src="/Images/hamburgerMenu.webp" alt="Open Menu" />
+        </a>
+        <div class="nav">
+            <a href="/index.html" class="logo">GZ</a>
+            <div class="nav-links">
+                <a href="/HTML/leaderboard.html?theme=kultura">Results</a>
+                <a onclick="Logout()">Log out</a>
+            </div>
+        </div>
+        <!-- Sidebar Menu -->
+        <header>
+            <nav>
+                <ul id="menu" class="menu">
+                    <a href="#" id="hamburger-menu-close" class="ham inside">
+                        <img src="/Images/ham.webp" alt="Close Menu" />
+                    </a>
+                    <li><a href="/HTML/leaderboard.html?theme=kultura">Results</a></li>
+                    <li><a onclick="Logout()">Log out</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <h1 class="Kultura">KULTURA</h1>
+            <div class="content">
+                <p>Kultura Generace Z je mixem digitálního světa a silného zaměření na autenticitu a změnu. Mladí lidé této generace vyrůstali s internetem, a tak je pro ně přirozené využívat technologie k vyjádření sebe sama, propojení s ostatními a hledání nových způsobů vyjadřování. Sociální média, především TikTok, Instagram a YouTube, jsou nejen platformami pro sdílení zážitků, ale i pro formování trendů, které se rychle mění a často reflektují současné společenské a kulturní změny.</p>
+                <p>Gen Z je často vnímána jako generace, která se nebojí být jiná. Preferují diverzitu a inkluzivitu, což se projevuje nejen v jejich postojích k identitám a orientacím, ale i v jejich zájmech o různá umělecká a kulturní vyjádření. Ať už jde o streetwear, nový přístup k hudbě nebo umění, Gen Z se nebojí kombinovat neobvyklé styly a hledat autentické formy vyjádření, které jsou pro ně osobní a meaningful.</p>
+                <a href="/HTML/questions.html?theme=kultara" class="button">SPUSTIT KVÍZ</a>
+            </div>
+        </div>
+    </div>
+    <script src="../Scripts/menu.js"></script>
+    <script src="../Scripts/Logout.js"></script>
+    <script src="../Scripts/TokenValidation.js"></script>
+    <script>window.onload = TokenValidation()</script>
+</body>
+</html>
